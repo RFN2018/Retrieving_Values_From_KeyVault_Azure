@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="ROWKEY" />
+    </Key>
+    <Property Name="ROWKEY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SUMMARY_TYPE" Type="nvarchar(max)" />
+    <Property Name="TRANS_DATE" Type="datetime" Nullable="false" />
+    <Property Name="PART_NO" Type="nvarchar(max)" />
+    <Property Name="DESCRIPTION" Type="nvarchar(max)" />
+    <Property Name="ACCOUNT_NO" Type="nvarchar(max)" />
+    <Property Name="CUSTOMER_NO" Type="nvarchar(max)" />
+    <Property Name="AGRON_CODE" Type="nvarchar(max)" />
+    <Property Name="TEAM_CODE" Type="nvarchar(max)" />
+    <Property Name="SITE_CODE" Type="nvarchar(max)" />
+    <Property Name="MARKET_CODE" Type="nvarchar(max)" />
+    <Property Name="SALES_GROUP" Type="nvarchar(max)" />
+    <Property Name="SALES_SUB_GROUP" Type="nvarchar(max)" />
+    <Property Name="QTY_INVOICED" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="COST_INVOICED" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="REV_INVOICED" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Sales" EntityType="Self.Sales" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

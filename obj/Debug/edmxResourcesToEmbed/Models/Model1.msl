@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Analytics_DatabaseEntities">
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="Model.Sale">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="ROWKEY" ColumnName="ROWKEY" />
+          <ScalarProperty Name="SUMMARY_TYPE" ColumnName="SUMMARY_TYPE" />
+          <ScalarProperty Name="TRANS_DATE" ColumnName="TRANS_DATE" />
+          <ScalarProperty Name="PART_NO" ColumnName="PART_NO" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="CUSTOMER_NO" ColumnName="CUSTOMER_NO" />
+          <ScalarProperty Name="AGRON_CODE" ColumnName="AGRON_CODE" />
+          <ScalarProperty Name="TEAM_CODE" ColumnName="TEAM_CODE" />
+          <ScalarProperty Name="SITE_CODE" ColumnName="SITE_CODE" />
+          <ScalarProperty Name="MARKET_CODE" ColumnName="MARKET_CODE" />
+          <ScalarProperty Name="SALES_GROUP" ColumnName="SALES_GROUP" />
+          <ScalarProperty Name="SALES_SUB_GROUP" ColumnName="SALES_SUB_GROUP" />
+          <ScalarProperty Name="QTY_INVOICED" ColumnName="QTY_INVOICED" />
+          <ScalarProperty Name="COST_INVOICED" ColumnName="COST_INVOICED" />
+          <ScalarProperty Name="REV_INVOICED" ColumnName="REV_INVOICED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
